@@ -369,7 +369,6 @@
       <h2>함께 나누는 이야기</h2>
 
       <div class="tab-list">
-
         <div class="tab-menu">
           <ul>
             <li class="on"><a href="#review">관람후기</a></li>
@@ -465,40 +464,64 @@
                 <p>[청와대] 대통령 관저</p>
               </div>
             </div>
-
-            </figure>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div> -->
           </article>
-          <article id="video" class="tab">
-            <ul>
-              <li><a href="#"></a><img src="./images/video1.jpg" alt="">
+          <article id="video" class="tab swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/video1.jpg" alt=""></a>
                 <p>맑은 시냇물 소리와 함께 걷는 산책 힐링</p>
-              </li>
-              <li><a href="#"></a><img src="./images/video2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/video2.jpg" alt=""></a>
                 <p>항상 봄이 머무는 상춘재</p>
-              </li>
-              <li><a href="#"></a><img src="./images/video3.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/video3.jpg" alt=""></a>
                 <p>영빈관에서 함께 고민을 날려보아요</p>
-              </li>
-              <li><a href="#"></a><img src="./images/video4.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/video4.jpg" alt=""></a>
                 <p>같이 산책 할까요</p>
-              </li>
-              <li><a href="#"></a><img src="./images/video5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/video5.jpg" alt=""></a>
                 <p>옛날 기자의 춘추관 인터뷰 힐링</p>
-              </li>
-              <li><a href="#"></a><img src="./images/video6.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/video6.jpg" alt=""></a>
                 <p>청와대 1시간 반 코스 이렇게 둘러보세요</p>
-              </li>
-              <li><a href="#"></a><img src="./images/video7.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/video7.jpg" alt=""></a>
                 <p>청와대와 함께한 국내 최대 장애인 문화재</p>
-              </li>
-              <li><a href="#"></a><img src="./images/video8.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/video8.jpg" alt=""></a>
                 <p>대통령 관저에서 곰돌이와 꿈나라로 가요</p>
-              </li>
-            </ul>
+              </div>
+
+            </div>
 
 
           </article>
-          <article id="news" class="tab"></article>
+          <article id="news" class="tab swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="./images/news1.jpg" alt=""></a>
+                <p>경복궁 후원 청와대 속 문화유산</p>
+              </div>
+              <div class="swiper-slide"><a href="#"><img src="./images/news2.jpg" alt=""></a>
+                <p>과거와 현재를 관통하는 역사여행</p>
+              </div>
+              <div class="swiper-slide"><a href="#"><img src="./images/news3.jpg" alt=""></a>
+                <p>문화와 함께하는 도심 속 휴식여행</p>
+              </div>
+              <div class="swiper-slide"><a href="#"><img src="./images/news4.jpg" alt=""></a>
+                <p>국민 모두가 누릴 수 있는 공간으로 !</p>
+              </div>
+            </div>
+          </article>
         </div>
 
       </div>
@@ -575,11 +598,17 @@
     textAnimation();
 
     // sect5 tab-menu
+
+    
     var photoSwiper = new Swiper("#photo.swiper", {
       breakpoints: { // 반응형
         640: {
           slidesPerView: 1,// 한줄에 몇개 까지 
-          spaceBetween: 50,// 요소 사이 간격 조절
+          spaceBetween: 20,// 요소 사이 간격 조절
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
         },
         1200: {
           slidesPerView: 2,
@@ -592,6 +621,60 @@
           slidesPerView: 4,
           grid: {
             rows: 2, // 몇줄로 할지
+          },
+          spaceBetween: 50,
+        },
+      },
+    });
+
+    var photoSwiper = new Swiper("#video.swiper", {
+      breakpoints: { // 반응형
+        640: {
+          slidesPerView: 1,// 한줄에 몇개 까지 
+          spaceBetween: 20,// 요소 사이 간격 조절
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        },
+        1200: {
+          slidesPerView: 2,
+          grid: {
+            rows: 1, // 몇줄로 할지
+          },
+          spaceBetween: 20,
+        },
+        1500: {
+          slidesPerView: 4,
+          grid: {
+            rows: 2, // 몇줄로 할지
+          },
+          spaceBetween: 50,
+        },
+      },
+    });
+
+    var photoSwiper = new Swiper("#news.swiper", {
+      breakpoints: { // 반응형
+        640: {
+          slidesPerView: 1,// 한줄에 몇개 까지 
+          spaceBetween: 20,// 요소 사이 간격 조절
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        },
+        1200: {
+          slidesPerView: 2,
+          grid: {
+            rows: 1, // 몇줄로 할지
+          },
+          spaceBetween: 20,
+        },
+        1500: {
+          slidesPerView: 4,
+          grid: {
+            rows: 1, // 몇줄로 할지
           },
           spaceBetween: 50,
         },

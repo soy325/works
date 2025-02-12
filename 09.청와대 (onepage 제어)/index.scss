@@ -770,6 +770,266 @@ h1 {
             display: none;
         }
     }
+    .sect5 {
+        h2 {
+            font-size: 36px;
+            font-family: 'NotoSeri';
+            font-weight: 500;
+            text-align: center;
+            padding-top: 120px;
+            // position: absolute;
+            // top: 13%;
+            // left: 50%;
+            // transform: translateX(-50%);
+        }
+
+        .tab-list {
+            max-width: 1600px;
+            margin: 0 auto;
+            height: 100%;
+
+            .tab-menu {
+                padding-top: 10px;
+                width: 100%;
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 20px;
+
+                    li {
+                        width: 50%;
+                        padding: 20px;
+                        text-align: center;
+                        font-size: 26px;
+                        background: rgba(0, 0, 0, .5);
+                        border: 1px solid transparent;
+                        &.on {
+                            background: #c71c30;
+                        }
+
+                        &:hover {
+                            border-color: #c71c30;
+                        }
+                    }
+                }
+            }
+            
+            .tab-contants {
+                width: 100%;
+                height: 600px;
+                position: relative;
+
+                .tab {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+
+                    &.on {
+                        display: flex;
+                    }
+                }
+
+                #review {
+                    // display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+
+                    &>div {
+                        width: 100%;
+                        height: 430px;
+                        background-color: #fff;
+                        border-radius: 20px 20px 0 0;
+                        overflow: hidden;
+
+
+
+                        figure {
+                            >span{
+                                overflow: hidden;
+                                display: block;
+                                height: 250px;
+                            }
+                            img {
+                                border-radius: 20px 20px 0 0;
+                                width: 350px;
+                                height: 250px;
+
+                                &:hover {
+                                    transform: scale(1.2);
+                                    transition: .35s;
+                                }
+                            }
+
+                            p {
+                                padding: 20px;
+                                font-size: 20px;
+                                color: #000;
+                            }
+
+                            figcaption {
+                                ul {
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+
+                                li {
+                                    color: #000;
+                                    padding: 10px;
+
+                                    span {
+                                        padding-left: 5px;
+                                    }
+
+                                    img {
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                #photo {
+                    padding:80px; // swiper 안쪽 여백
+
+                    .swiper-wrapper {
+                        overflow: hidden;
+                        .swiper-slide {
+                            overflow: hidden;
+                            position: relative;
+                            &:hover{
+                                p{opacity: 1;}
+                            }
+                            
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+
+                                &:hover {
+                                    transform: scale(1.2);
+                                    transition: .35s;
+                                }
+                            }
+                            p{
+                                position: absolute;
+                                display: block;
+                                z-index: 99;
+                                left: 0;
+                                bottom: 0;
+                                color: #fff;
+                                width: 100%;
+                                padding: 15px 20px;
+                                background-color: rgba(0, 0, 0, 0.6745098039);
+                                font-size: 17px;
+                                font-weight: 400;
+                                transition: 0.35s;
+                                opacity: 0;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+
+
+                }
+
+                #video {
+                    padding:80px; // swiper 안쪽 여백
+
+                    .swiper-wrapper {
+                        overflow: hidden;
+                        .swiper-slide {
+                            overflow: hidden;
+                            position: relative;
+                            &:hover{
+                                p{opacity: 1;}
+                            }
+                            
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+
+                                &:hover {
+                                    transform: scale(1.2);
+                                    transition: .35s;
+                                }
+                            }
+                            p{
+                                position: absolute;
+                                display: block;
+                                z-index: 99;
+                                left: 0;
+                                bottom: 0;
+                                color: #fff;
+                                width: 100%;
+                                padding: 15px 20px;
+                                background-color: rgba(0, 0, 0, 0.6745098039);
+                                font-size: 17px;
+                                font-weight: 400;
+                                transition: 0.35s;
+                                opacity: 0;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+
+
+                }
+
+                #news {
+                    padding:80px; // swiper 안쪽 여백
+
+                    .swiper-wrapper {
+                        overflow: hidden;
+                        .swiper-slide {
+                            overflow: hidden;
+                            position: relative;
+                            &:hover{
+                                p{opacity: 1;}
+                            }
+                            
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+
+                                &:hover {
+                                    transform: scale(1.2);
+                                    transition: .35s;
+                                }
+                            }
+                            p{
+                                position: absolute;
+                                display: block;
+                                z-index: 99;
+                                left: 0;
+                                bottom: 0;
+                                color: #fff;
+                                width: 100%;
+                                padding: 15px 20px;
+                                background-color: rgba(0, 0, 0, 0.6745098039);
+                                font-size: 17px;
+                                font-weight: 400;
+                                transition: 0.35s;
+                                opacity: 0;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+
+    }
 }
 
 @media screen and (min-width: 641px) {
@@ -1205,7 +1465,6 @@ h1 {
             .tab-contants {
                 width: 100%;
                 height: 600px;
-                border: 1px solid #0f0;
                 position: relative;
 
                 .tab {
@@ -1326,31 +1585,21 @@ h1 {
 
                 }
                 #video {
-                    // display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    padding:80px; // swiper 안쪽 여백
 
-                    ul {
-                        display: flex;
-                        flex-wrap: wrap;
-                        gap: 50px;
-                        justify-content: center;
-                        align-items: center;
-
-
-                        li {
-                            width: 290px;
-                            height: 200px;
+                    .swiper-wrapper {
+                        overflow: hidden;
+                        .swiper-slide {
                             overflow: hidden;
                             position: relative;
                             &:hover{
                                 p{opacity: 1;}
                             }
                             
-
                             img {
                                 width: 100%;
                                 height: 100%;
+                                object-fit: cover;
 
                                 &:hover {
                                     transform: scale(1.2);
@@ -1372,8 +1621,49 @@ h1 {
                                 transition: 0.35s;
                                 opacity: 0;
                                 overflow: hidden;
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
+
+
+                }
+                #news {
+                    padding:80px; 
+
+                    .swiper-wrapper {
+                        overflow: hidden;
+                        .swiper-slide {
+                            overflow: hidden;
+                            position: relative;
+                            &:hover{
+                                p{opacity: 1;}
+                            }
+                            
+                            img {
+                                width: 322px;
+                                height: 195px;
+                                object-fit: cover;
+
+                                &:hover {
+                                    transform: scale(1.2);
+                                    transition: .35s;
+                                }
+                            }
+                            p{
+                                position: absolute;
+                                display: block;
+                                z-index: 99;
+                                left: 0;
+                                bottom: 245px;
+                                color: #fff;
+                                width: 100%;
+                                padding: 15px 20px;
+                                background-color: rgba(0, 0, 0, 0.6745098039);
+                                font-size: 17px;
+                                font-weight: 400;
+                                transition: 0.35s;
+                                opacity: 0;
+                                overflow: hidden;
                             }
                         }
                     }

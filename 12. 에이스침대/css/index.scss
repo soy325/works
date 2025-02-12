@@ -32,6 +32,10 @@ img {
     vertical-align: top;
 }
 
+.flex{
+    display: flex;
+}
+
 body {
     font-family: 'NotoSans';
 }
@@ -264,6 +268,7 @@ header {
     .arrow {
         position: absolute;
         cursor: pointer;
+        z-index: 99;
 
         &:hover {
             p {
@@ -310,7 +315,7 @@ header {
 
     h2 {
         text-align: center;
-        padding: 100px;
+        padding: 50px;
         font-size: 60px;
         font-family: 'Metropolis-Light';
         font-weight: lighter;
@@ -320,7 +325,7 @@ header {
         width: 1700px;
         margin: auto;
         display: flex;
-        height: 800px;
+        height: 675px;
 
         ul.tab-menu {
             width: 30%;
@@ -354,9 +359,10 @@ header {
             overflow: hidden;
 
             .vslide-container {
-                width: 710px;
-                height: 800px;
+                width: 650px;
+                height: 750px;
                 position: relative;
+                overflow: hidden;
 
                 .vslide-wrap {
                     width: 100%;
@@ -449,8 +455,8 @@ header {
     }
 
     .prev {
-        left: 100px;
-        top: 590px;
+        left: 30px;
+        top: 450px;
 
         p {
             font-family: 'Metropolis-Light';
@@ -464,8 +470,8 @@ header {
     }
 
     .next {
-        right: 100px;
-        top: 590px;
+        right: 30px;
+        top: 420px;
 
         p {
             font-family: 'Metropolis-Light';
@@ -481,7 +487,7 @@ header {
 }
 
 .sect3 {
-    height: 100vh;
+    height: 120vh;
     background: #f4f7fa;
 
     h2 {
@@ -617,6 +623,55 @@ header {
     .swiper-scrollbar {
         bottom: -20px;
     }
+    .text {
+        position: absolute;
+        left: 10%;
+        top: 45%;
+        z-index: 99;
+        color: #fff;
+        opacity: 0;
+        text-align: left;
+        h3 {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+        .btn {
+            border: 1px solid #fff;
+            padding: 10px 30px;
+        }
+        .keyword {
+            font-size: 16px;
+            li{
+                border: 1px solid #fff;
+                border-radius: 99px;
+                padding: 5px 10px;
+            }
+        }
+    }
+    .swiper-slide-active .text {
+        animation: slide_ani1 0.6s linear 0.5s forwards;
+    }
+}
+
+
+
+@keyframes slide_ani1 {
+    0% {
+        left: 20%;
+        top: 45%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 20%;
+        top: 15%;
+        opacity: 1;
+    }
 }
 
 .sect4 {
@@ -625,7 +680,7 @@ header {
 
     h2 {
         text-align: center;
-        padding: 120px 0 50px 0;
+        padding: 50px 0;
         font-size: 60px;
         font-family: 'Metropolis-Light';
         font-weight: lighter;
@@ -722,49 +777,49 @@ header {
         .grid1 {
             grid-column: 1/2;
             grid-row: 1/2;
-            background-image: url(/images/grid1.png);
+            background-image: url(../images/grid1.png);
         }
 
         .grid2 {
             grid-column: 2/3;
             grid-row: 1/2;
-            background-image: url(/images/grid2.jpg);
+            background-image: url(../images/grid2.jpg);
         }
 
         .grid3 {
             grid-column: 3/4;
             grid-row: 1/2;
-            background-image: url(/images/grid3.png);
+            background-image: url(../images/grid3.png);
         }
 
         .grid4 {
             grid-column: 4/5;
             grid-row: 1/2;
-            background-image: url(/images/grid4.jpg);
+            background-image: url(../images/grid4.jpg);
         }
 
         .grid5 {
             grid-column: 1/2;
             grid-row: 2/3;
-            background-image: url(/images/grid5.jpg);
+            background-image: url(../images/grid5.jpg);
         }
 
         .grid6 {
             grid-column: 2/3;
             grid-row: 2/3;
-            background-image: url(/images/grid6.png);
+            background-image: url(../images/grid6.png);
         }
 
         .grid7 {
             grid-column: 3/4;
             grid-row: 2/3;
-            background-image: url(/images/grid7.jpg);
+            background-image: url(../images/grid7.jpg);
         }
 
         .grid8 {
             grid-column: 4/5;
             grid-row: 2/3;
-            background-image: url(/images/grid8.jpg);
+            background-image: url(../images/grid8.jpg);
         }
 
     }

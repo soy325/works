@@ -29,6 +29,10 @@ img {
   vertical-align: top;
 }
 
+.flex {
+  display: flex;
+}
+
 body {
   font-family: "NotoSans";
 }
@@ -213,6 +217,7 @@ header .head nav .gnb {
 .sect1 .arrow {
   position: absolute;
   cursor: pointer;
+  z-index: 99;
 }
 .sect1 .arrow:hover p {
   opacity: 1;
@@ -250,7 +255,7 @@ header .head nav .gnb {
 }
 .sect2 h2 {
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-size: 60px;
   font-family: "Metropolis-Light";
   font-weight: lighter;
@@ -259,7 +264,7 @@ header .head nav .gnb {
   width: 1700px;
   margin: auto;
   display: flex;
-  height: 800px;
+  height: 675px;
 }
 .sect2 #tabbox ul.tab-menu {
   width: 30%;
@@ -289,9 +294,10 @@ header .head nav .gnb {
   overflow: hidden;
 }
 .sect2 #tabbox .tabs .vslide-container {
-  width: 710px;
-  height: 800px;
+  width: 650px;
+  height: 750px;
   position: relative;
+  overflow: hidden;
 }
 .sect2 #tabbox .tabs .vslide-container .vslide-wrap {
   width: 100%;
@@ -361,8 +367,8 @@ header .head nav .gnb {
   opacity: 1;
 }
 .sect2 .prev {
-  left: 100px;
-  top: 590px;
+  left: 30px;
+  top: 450px;
 }
 .sect2 .prev p {
   font-family: "Metropolis-Light";
@@ -374,8 +380,8 @@ header .head nav .gnb {
   font-weight: 500;
 }
 .sect2 .next {
-  right: 100px;
-  top: 590px;
+  right: 30px;
+  top: 420px;
 }
 .sect2 .next p {
   font-family: "Metropolis-Light";
@@ -388,7 +394,7 @@ header .head nav .gnb {
 }
 
 .sect3 {
-  height: 100vh;
+  height: 120vh;
   background: #f4f7fa;
 }
 .sect3 h2 {
@@ -501,14 +507,59 @@ header .head nav .gnb {
 .sect3 .swiper-scrollbar {
   bottom: -20px;
 }
+.sect3 .text {
+  position: absolute;
+  left: 10%;
+  top: 45%;
+  z-index: 99;
+  color: #fff;
+  opacity: 0;
+  text-align: left;
+}
+.sect3 .text h3 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+.sect3 .text p {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.sect3 .text .btn {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.sect3 .text .keyword {
+  font-size: 16px;
+}
+.sect3 .text .keyword li {
+  border: 1px solid #fff;
+  border-radius: 99px;
+  padding: 5px 10px;
+}
+.sect3 .swiper-slide-active .text {
+  animation: slide_ani1 0.6s linear 0.5s forwards;
+}
 
+@keyframes slide_ani1 {
+  0% {
+    left: 20%;
+    top: 45%;
+    opacity: 0;
+  }
+  100% {
+    left: 20%;
+    top: 15%;
+    opacity: 1;
+  }
+}
 .sect4 {
   height: 100vh;
   background: #f4f7fa;
 }
 .sect4 h2 {
   text-align: center;
-  padding: 120px 0 50px 0;
+  padding: 50px 0;
   font-size: 60px;
   font-family: "Metropolis-Light";
   font-weight: lighter;
@@ -590,42 +641,42 @@ header .head nav .gnb {
 .sect5 .sect5-grid .grid1 {
   grid-column: 1/2;
   grid-row: 1/2;
-  background-image: url(/images/grid1.png);
+  background-image: url(../images/grid1.png);
 }
 .sect5 .sect5-grid .grid2 {
   grid-column: 2/3;
   grid-row: 1/2;
-  background-image: url(/images/grid2.jpg);
+  background-image: url(../images/grid2.jpg);
 }
 .sect5 .sect5-grid .grid3 {
   grid-column: 3/4;
   grid-row: 1/2;
-  background-image: url(/images/grid3.png);
+  background-image: url(../images/grid3.png);
 }
 .sect5 .sect5-grid .grid4 {
   grid-column: 4/5;
   grid-row: 1/2;
-  background-image: url(/images/grid4.jpg);
+  background-image: url(../images/grid4.jpg);
 }
 .sect5 .sect5-grid .grid5 {
   grid-column: 1/2;
   grid-row: 2/3;
-  background-image: url(/images/grid5.jpg);
+  background-image: url(../images/grid5.jpg);
 }
 .sect5 .sect5-grid .grid6 {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-image: url(/images/grid6.png);
+  background-image: url(../images/grid6.png);
 }
 .sect5 .sect5-grid .grid7 {
   grid-column: 3/4;
   grid-row: 2/3;
-  background-image: url(/images/grid7.jpg);
+  background-image: url(../images/grid7.jpg);
 }
 .sect5 .sect5-grid .grid8 {
   grid-column: 4/5;
   grid-row: 2/3;
-  background-image: url(/images/grid8.jpg);
+  background-image: url(../images/grid8.jpg);
 }
 .sect5 ul {
   display: flex;

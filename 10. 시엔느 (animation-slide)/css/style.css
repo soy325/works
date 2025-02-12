@@ -29,13 +29,13 @@ main {
   background-size: cover;
 }
 .vslide-container .vslide-wrap .vslide.vslide1 {
-  background-image: url(/images/main1-1.jpg);
+  background-image: url(../images/main1-1.jpg);
 }
 .vslide-container .vslide-wrap .vslide.vslide2 {
-  background-image: url(/images/main2-1.jpg);
+  background-image: url(../images/main2-1.jpg);
 }
 .vslide-container .vslide-wrap .vslide.vslide3 {
-  background-image: url(/images/main3-1.jpg);
+  background-image: url(../images/main3-1.jpg);
 }
 
 .hslide-container {

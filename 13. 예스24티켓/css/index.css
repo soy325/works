@@ -157,7 +157,7 @@ header .detail ul.user {
 .sect2 article {
   display: grid;
   width: 1224px;
-  height: 708px;
+  height: 570px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
