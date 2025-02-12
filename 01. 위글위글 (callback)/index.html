@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>위글위글</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .swiper {
+      width: 90%;
+      height: 140%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 530px;
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><img src="./images/Wiggle-Wiggle_Logo.png" alt="logo"></h1>
+    <p>WELCOM TO WIGGLE WIGGLE<br>
+      VIP MEMBERSHIP </p>
+  </header>
+  <div class="bg-bottom">
+    <img src="./images/bottom.gif" alt="">
+  </div>
+  <div class="main-container">
+    <div class="main">
+      <img src="./images/main.webp" alt="">
+    </div>
+    <div class="menu">
+      <button class="btn1">
+        <a href="#">SUPER SALE</a>
+      </button>
+      <button class="btn2">
+        <a href="#">SUPER EVENT</a>
+      </button>
+    </div>
+  </div>
+  <div class="main-visual">
+    <figure class="flower-left"><img src="./images/flower.gif" alt=""></figure>
+    <figure class="flower-right"><img src="./images/flower.gif" alt=""></figure>
+  </div>
+  <section id="sect1">
+    <div class="line-box">
+      <span class="top"></span>
+      <span class="right"></span>
+      <span class="bottom"></span>
+      <span class="left"></span>
+      <div class="sect1-contants">
+        <figure>
+          <img src="./images/sale.gif" alt="image">
+        </figure>
+        <p></p>
+        <a href="#" class="btn1close">닫기</a>
+        <a href="https://wiggle-wiggle.com/product/list.html?cate_no=358" class="btn2">THE MORE</a>
+      </div>
+    </div>
+
+
+  </section>
+  <section id="sect2">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/item1.gif" alt=""></div>
+        <div class="swiper-slide"><img src="./images/item3.gif" alt=""></div>
+        <div class="swiper-slide"><img src="./images/item4.gif" alt=""></div>
+        <div class="swiper-slide"><img src="./images/item5.gif" alt=""></div>
+        <div class="swiper-slide"><img src="./images/item2.gif" alt=""></div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <a href="#" class="btn2close">CLOSE</a>
+  </section>
+  <script src="./script/jquery-3.7.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script/index.js"></script>
+  <!-- Swiper JS -->
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      loop: true,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
+</body>
+
+</html>
